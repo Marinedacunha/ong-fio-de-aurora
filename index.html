@@ -4,122 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fio de Aurora | Inicio</title>
-</head>
-<body>
-  <header>
-<h1>Fio de Aurora</h1>
-<nav>
-  <ul>
-<li><a href="index.html">Início</a></li>
-    <li><a href="projetos.html">Projetos</a></li>
-    <li><a href="cadastro.html">Cadastro</a></li>
-  </ul>
-  </nav>
+  <link rel="stylesheet" href="./assets/css/style.css"> </head>
+<body class="app-layout">
+  <header class="app-layout__header">
+    <a href="index.html" class="header__logo">Fio de Aurora</a>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="app-layout__nav">
+      <ul class="nav-menu">
+        <li class="nav-menu_item"><a href="index.html" class="nav-menu_link">Início</a></li>
+        <li class="nav-menu_item"><a href="projetos.html" class="nav-menu_link">Projetos</a></li>
+        <li class="nav-menu_item"><a href="cadastro.html" class="nav-menu_link">Cadastro</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
-<section>
-<h2>Fio de Aurora | O Recomeço para Quem Fica</h2>
-    
-    <picture>
-        <source 
-            media="(min-width: 768px)" 
-            srcset="./assets/images/banner-index-large.webp" 
-            type="image/webp"
-        >
-        
-        <source 
-            media="(max-width: 767px)" 
-            srcset="./assets/images/banner-index-medium.webp" 
-            type="image/webp"
-        >
-        
-        <img 
-            src="./assets/images/banner-index-large.webp" 
-            alt="Pessoas dando as mãos em sinal de apoio e união" 
-            width="1200" 
-            height="400" 
-            loading="eager"
-        >
-    </picture>
-</section>
-<section>
-<h3>O que fazemos?</h3>
-  <article>
-    <h4>Nossa Missão: Acolher o Luto</h4>
-  
- <img 
-        src="./assets/images/index-1-medium.webp" 
-        alt="Dois homens em uma sala de terapia conversando se abraçando e se consolando" 
-        width="300" 
-        height="100" 
-        loading="lazy"
-        
-        srcset="./assets/images/index-1-small.webp 320w, 
-                ./assets/images/index-1-medium.webp 600w,
-                ./assets/images/index-1-large.webp 800w"
-        
-        sizes="(max-width: 600px) 320px, 
-               (max-width: 1000px) 600px, 
-               800px"
-    >
 
-    <p>A Fio de Aurora é dedicada a oferecer apoio, empatia e esperança a quem vive o luto.
-Atuamos com grupos de acolhimento e escuta solidária, transformando a dor em um recomeço de vida.
+  <main class="app-layout__main-content">
+    <section class="hero">
+      <h2 class="hero__title">Fio de Aurora | O Recomeço para Quem Fica</h2>
+      <picture class="hero__picture">
+        <source media="(min-width: 768px)" srcset="./assets/images/banner-index-large.webp" type="image/webp">
+        <source media="(max-width: 767px)" srcset="./assets/images/banner-index-medium.webp" type="image/webp">
+        <img src="./assets/images/banner-index-large.webp" alt="Pessoas dando as mãos em sinal de apoio e união" width="1200" height="400" loading="eager">
+      </picture>
+    </section>
 
-</p>
-  </article>
-  <article>
-    <h4>
-    Junte-se à Nossa Rede de Apoio
+    <section class="content-section">
+      <h3 class="content-section__title">O que fazemos?</h3>
+      <div class="content-section__grid">
+        <article class="card">
+          <h4 class="card__title">Nossa Missão: Acolher o Luto</h4>
+          <img class="card__image" src="./assets/images/index-1-medium.webp" alt="Dois homens em uma sala de terapia conversando se abraçando e se consolando" width="300" height="100" loading="lazy" srcset="./assets/images/index-1-small.webp 320w, ./assets/images/index-1-medium.webp 600w, ./assets/images/index-1-large.webp 800w" sizes="(max-width: 600px) 320px, (max-width: 1000px) 600px, 800px">
+          <p class="card__text">A Fio de Aurora é dedicada a oferecer apoio, empatia e esperança a quem vive o luto. Atuamos com grupos de acolhimento e escuta solidária, transformando a dor em um recomeço de vida.</p>
+        </article>
+        <article class="card">
+          <h4 class="card__title">Junte-se à Nossa Rede de Apoio</h4>
+          <img class="card__image" src="./assets/images/index-2-medium.webp" alt="Uma mão passando coração de papel para outra mão" width="300" height="100" loading="lazy" srcset="./assets/images/index-2-small.webp 320w, ./assets/images/index-2-medium.webp 600w, ./assets/images/index-2-large.webp 800w" sizes="(max-width: 600px) 320px, (max-width: 1000px) 600px, 800px">
+          <p class="card__text">Somos um abraço coletivo. Saiba como se tornar um voluntário acolhedor em nossos encontros terapêuticos. Veja como sua doação se converte em amparo material e emocional para famílias em situação de vulnerabilidade.</p>
+        </article>
+        <article class="card">
+          <h4 class="card__title">Transparência e Suporte Prático</h4>
+          <img class="card__image" src="./assets/images/index-3-medium.webp" alt="Três placas penduradas em uma grade escrito: não desista, você não está sozinho, você é importante" width="300" height="100" loading="lazy" srcset="./assets/images/index-3-small.webp 320w, ./assets/images/index-3-medium.webp 600w, ./assets/images/index-3-large.webp 800w" sizes="(max-width: 600px) 320px, (max-width: 1000px) 600px, 800px">
+          <p class="card__text">Valorizamos a comunicação direta e a clareza total. Para informações sobre nossos grupos, agendamentos ou parcerias, entre em contato. Email: contato@fioaurora.org. Telefone: (11) 0800-7777.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-    </h4>
-     <img 
-        src="./assets/images/index-2-medium.webp" 
-        alt="Uma mão passando coração de papel para outra mão" 
-        width="300" 
-        height="100" 
-        loading="lazy"
-        
-        srcset="./assets/images/index-2-small.webp 320w, 
-                ./assets/images/index-2-medium.webp 600w,
-                ./assets/images/index-2-large.webp 800w"
-        
-        sizes="(max-width: 600px) 320px, 
-               (max-width: 1000px) 600px, 
-               800px"
-    >
-    <p>Somos um abraço coletivo. Saiba como se tornar um voluntário acolhedor em nossos encontros terapêuticos.
-Veja como sua doação se converte em amparo material e emocional para famílias em situação de vulnerabilidade.
-
-
-</p>
-  </article>
-  <article>
-    <h4>Transparência e Suporte Prático</h4>
-     <img 
-        src="./assets/images/index-3-medium.webp" 
-        alt="Três placas penduradas em uma grade escrito: não desista, você não está sozinho, você é importante" 
-        width="300" 
-        height="100" 
-        loading="lazy"
-        
-        srcset="./assets/images/index-3-small.webp 320w, 
-                ./assets/images/index-3-medium.webp 600w,
-                ./assets/images/index-3-large.webp 800w"
-        
-        sizes="(max-width: 600px) 320px, 
-               (max-width: 1000px) 600px, 
-               800px"
-    >
-    <p>Valorizamos a comunicação direta e a clareza total.
-Para informações sobre nossos grupos, agendamentos ou parcerias, entre em contato.
-Email: contato@fioaurora.org. Telefone: (11) 0800-7777.
-</p>
-  </article>
-</section>
-</main>
-<footer>
-  <p>&copy; 2023 Fio de Aurora. Todos os direitos reservados.</p>
-</footer>
+  <footer class="app-layout__footer">
+    <p class="footer__text">&copy; 2023 Fio de Aurora. Todos os direitos reservados.</p>
+    <address class="footer__address">
+        </address>
+  </footer>
 </body>
 </html>
